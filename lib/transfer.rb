@@ -22,8 +22,9 @@ class Transfer
     
     # if self.valid? == false
     if self.receiver.status == "closed"
-      "Transaction rejected. Please check your account balance."
       self.status = "rejected"
+      "Transaction rejected. Please check your account balance."
+      
     
     elsif self.sender.balance < self.amount
       "Transaction rejected. Please check your account balance."
