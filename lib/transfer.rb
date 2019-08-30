@@ -10,4 +10,8 @@ class Transfer
     @amount = 50
   end 
   
+  def valid?
+    
+  end 
+  
 end
