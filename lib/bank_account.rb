@@ -17,6 +17,8 @@ class BankAccount
     print "Your balance is $#{self.balance}."
   end 
   
-  def valid?()
+  def valid?(bank_acc)
+    if bank_acc.balance <
+  end 
   
 end
