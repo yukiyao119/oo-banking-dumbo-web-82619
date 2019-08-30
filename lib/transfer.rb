@@ -40,8 +40,10 @@ class Transfer
     
   end 
   
-  def 
   
+  def reverse_transfer
+    
+  end 
     
 end
 
