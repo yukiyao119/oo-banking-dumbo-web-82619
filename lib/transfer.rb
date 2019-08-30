@@ -10,8 +10,12 @@ class Transfer
     @amount = 50
   end 
   
-  def valid?
-    
+  def valid?(sender, receiver)
+    if sender.valid? == true && receiver.valid? == true
+      return true
+    else 
+      return FALSE
+    end 
   end 
   
 end
