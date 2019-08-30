@@ -19,6 +19,11 @@ class Transfer
   end 
   
   def execute_transaction
-    self.sender.
+    self.sender.balance -= 50
+    self.receiver.balance += 50
   
 end
+
+
+
+
