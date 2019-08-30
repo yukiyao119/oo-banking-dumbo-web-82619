@@ -18,7 +18,11 @@ class BankAccount
   end 
   
   def valid?(bank_acc)
-    if bank_acc.balance <
+    if bank_acc.balance < 0 || bank_acc.status != "open"
+      return false 
+    else 
+      return true 
+    end 
   end 
   
 end
