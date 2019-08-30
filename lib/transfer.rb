@@ -23,6 +23,9 @@ class Transfer
       self.sender.balance -= 50
       self.receiver.balance += 50
       self.status = "complete"
+    else 
+      
+    end 
     
 end
 
