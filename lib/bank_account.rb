@@ -14,7 +14,7 @@ class BankAccount
   end 
   
   def display_balance
-    print "Your balance is $#{self.balance}."
+    "Your balance is $#{self.balance}."
   end 
   
   def valid?(bank_acc)
