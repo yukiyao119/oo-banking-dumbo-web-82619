@@ -25,10 +25,9 @@ class Transfer
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
       
-    
     elsif self.sender.balance < self.amount
-      "Transaction rejected. Please check your account balance."
       self.status = "rejected"
+      "Transaction rejected. Please check your account balance."
       
     elsif self.status == "pending"
       self.sender.balance -= 50
