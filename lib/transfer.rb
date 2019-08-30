@@ -24,6 +24,10 @@ class Transfer
       self.receiver.balance += 50
       self.status = "complete"
     end 
+  end 
+  
+  def 
+  
     
 end
 
