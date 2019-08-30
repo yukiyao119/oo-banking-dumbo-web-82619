@@ -24,10 +24,13 @@ class Transfer
       self.receiver.balance += 50
       self.status = "complete"
     end 
+    
     if self.sender.valid? == false 
       "Transaction rejected. Please check your account balance."
       self.sender.status = "rejected"
     end 
+    
+    
   end 
   
   def 
