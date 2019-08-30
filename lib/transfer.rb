@@ -27,11 +27,11 @@ class Transfer
     elsif self.valid? == false
     # self.sender.valid? == false || self.receiver.valid? == false
       "Transaction rejected. Please check your account balance."
-      self.sender.status = "rejected"
+      self.status = "rejected"
     
     elsif self.sender.balance < self.amount
       "Transaction rejected. Please check your account balance."
-      self.sender.status = "rejected"
+      self.status = "rejected"
     end 
 
   end 
