@@ -30,6 +30,10 @@ class Transfer
       self.sender.status = "rejected"
     end 
     
+    if self.sender.balance < self.amount
+      "Transaction rejected. Please check your account balance."
+      self.sender.status = "rejected"
+    end 
     # let(:bad_transfer) { Transfer.new(amanda, avi, 4000) }
     # expect(bad_transfer.execute_transaction).to eq("Transaction rejected. Please check your account balance.")
     # expect(bad_transfer.status).to eq("rejected")
