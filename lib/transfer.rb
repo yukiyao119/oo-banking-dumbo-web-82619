@@ -30,6 +30,8 @@ class Transfer
       self.sender.status = "rejected"
     end 
     
+    # expect(bad_transfer.execute_transaction).to eq("Transaction rejected. Please check your account balance.")
+    # expect(bad_transfer.status).to eq("rejected")
     
   end 
   
