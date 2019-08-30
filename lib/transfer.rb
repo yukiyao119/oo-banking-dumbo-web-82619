@@ -2,8 +2,9 @@ class Transfer
   
   attr_reader
   
-  def initialize
-    
+  def initialize(sender, receiver)
+    @sender = sender
+    @receiver = receiver
   end 
   
 end
